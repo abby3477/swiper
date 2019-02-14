@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,initial-scale=1.0, user-scalable=no">
+        <title>demo</title>
+        <link rel="stylesheet" href="./swiper.min.css">
+          <style type="text/css">
+              /* 初始化 */
+            body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+                padding: 0;
+                margin: 0;
+            }
+            body {
+                color: #000;
+                width:100%;
+                background-color: #ffffff;
+                line-height: 1.5em;
+                text-rendering: optimizeLegibility;
+                -webkit-text-size-adjust:none;
+            }
+
+            html {
+                font-size: 40px;
+                font-family: "微软雅黑" !important;
+                text-align: center;
+            }
+            body {
+                font-family: "微软雅黑" !important;
+            }
+            .kv {
+                width: 100%;
+            }
+            .kv .swiper-slide img {
+                display: block;
+                width: 100%;
+                height: 500px;
+            }
+            </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="kv swiper-container">                
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide kv1"><img src="./1.jpg"></div>
+                    <div class="swiper-slide kv2"><img src="./2.jpg"></div>
+                    <div class="swiper-slide kv3"><img src="./3.jpg"></div>
+                </div>
+               
+            </div>
+           
+           
+            
+        </div>
+        <script src="./swiper.min.js"></script>
+        <script type="text/javascript">
+            //kv轮播图
+            var swiper = new Swiper('.kv', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            loop: true,
+            autoplay: 1800,
+            autoplayDisableOnInteraction: false
+        });
+        </script>
+    </body>
+</html>
